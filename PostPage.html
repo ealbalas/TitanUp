@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Item Upload Form</title>
+  </head>
+  <body>
+    <!--page title-->
+    <h1>Upload Item</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      
+      <!--create a text box for title-->
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title"><br><br>
+
+      <!--create a text box for description-->
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea><br><br>
+      
+      <!--create a text box for price-->
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price"><br><br>
+
+      <!--create a drop down menu for status-->
+      <label for="status">Status:</label>
+      <select id="status" name="status">
+        <option value="Available">Available</option>
+        <option value="Sold">Sold</option>
+        <option value="Pending">Pending</option>
+      </select><br><br>
+      
+      <input type="submit" value="Upload">
+    </form>
+  </body>
+</html>
+
