@@ -2,18 +2,19 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    color: #fff;    /* Default font color */
 }
 
-.header{
+.header-section{
     min-width: 100vh;
     width: 100%;
-    background-color: #00244e;
     position: relative;
+    background-color: #00244e;
 }
 
 nav{
     display: flex;
-    padding: 2%;
+    padding: 1%;
     justify-content: space-between;
     align-items: center;
 }
@@ -35,7 +36,7 @@ nav img{
 }
 
 .nav-links ul li a{
-    color: #fff;
+    color: #ff7900;
     text-decoration: none;
     font-size: 15px;
 }
@@ -57,7 +58,6 @@ nav img{
 .search-section{
     width: 100%;
     padding: 0px 20px 20px 0px;
-    background-color: #00244e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,4 +98,94 @@ nav img{
 
 .material-symbols-outlined {
     color: #fff;
+    background-color: #ff7900;
+}
+
+.filter-section{
+    background-color: #00244e;
+}
+.filter{
+    flex: 1;
+    text-align: center;
+}
+.filter ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1px 10px;
+    position: relative;
+}
+.filter ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.filter ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #ff7900;
+    display: block;
+    margin: auto;
+    transition: 0.25s;
+}
+.filter ul li:hover::after{
+    width: 100%;
+}
+.sort {
+    padding-left: 20px;
+}
+.sort select {
+    background-color: #00244e;
+    border-radius: 10px;
+    padding: 5px;
+    border-color: #ff7900;
+}
+
+.listings-section {
+    padding: 50px 20px 50px 20px;
+    background-color: #00244e;
+}
+
+.card {
+    padding: 1em;
+    width: 250px;
+    border-radius: 15px;
+    background-color: rgba(255, 121, 0, 0.75);
+    box-shadow: 0px 5px #000;
+    text-align: left;
+}
+
+.card .title {
+    font-size: 17px;
+    font-weight: bold;
+}
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.see-details {
+    width: 100%;
+    min-height: 25px;
+    border-radius: 5px;
+    background-color: #00244e;
+    font-size: 15px;
+    margin-top: 0.5em;
+    flex: 1;
+    border: 0;
+    outline: none;
+}
+.see-details::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #ff7900;
+    display: block;
+    margin: auto;
+    transition: 0.25s;
+}
+.see-details:hover::after{
+    width: 100%;
+}
+.see-details:hover{
+    box-shadow: 0px 2px 2px #000;
 }
