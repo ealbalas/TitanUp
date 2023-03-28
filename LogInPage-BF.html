@@ -37,14 +37,16 @@
   <body>
     <div class="container">
       <div class="login-form">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <input type="text" placeholder="School ID">
-        <label class="save-info">
-          <input type="checkbox" name="save-login-info">
-          Save login information
-        </label>
-        <button>Login</button>
+        <form method="POST" action="/login">
+          <input type="email" name="email" placeholder="Email">
+          <input type="password" name="password" placeholder="Password">
+          <input type="text" name="schoolId" placeholder="School ID">
+          <label>
+            <input type="checkbox" name="saveLoginInfo">
+            Save login information
+          </label>
+          <button type="submit">Login</button>
+        </form>        
       </div>
     </div>
   </body>
